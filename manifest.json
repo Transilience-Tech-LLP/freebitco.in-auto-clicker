@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Freebitco-AutoClick",
+    "version": "1.1",
+  
+    "description": "Auto clicks per hour on freebitcoin",
+  
+    "icons": {
+      "48": "icons/click.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.freebitco.in/*"],
+        "js": ["click.js"]
+      }
+    ]
+  
+  }
